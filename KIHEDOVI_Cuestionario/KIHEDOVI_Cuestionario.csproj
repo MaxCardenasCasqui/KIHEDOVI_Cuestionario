@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormResponderCuestionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResponderCuestionario.Designer.cs">
+      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAgregarPreguntas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormResponderCuestionario.resx">
+      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgregarPreguntas.resx">
       <DependentUpon>FormAgregarPreguntas.cs</DependentUpon>
     </EmbeddedResource>
