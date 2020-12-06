@@ -46,34 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormResponderCuestionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormResponderCuestionario.Designer.cs">
-      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAgregarPreguntas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAgregarPreguntas.Designer.cs">
-      <DependentUpon>FormAgregarPreguntas.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormCrearCuestionario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCrearCuestionario.Designer.cs">
       <DependentUpon>FormCrearCuestionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResponderCuestionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResponderCuestionario.Designer.cs">
+      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormResponderCuestionario.resx">
-      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAgregarPreguntas.resx">
-      <DependentUpon>FormAgregarPreguntas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormCrearCuestionario.resx">
       <DependentUpon>FormCrearCuestionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResponderCuestionario.resx">
+      <DependentUpon>FormResponderCuestionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

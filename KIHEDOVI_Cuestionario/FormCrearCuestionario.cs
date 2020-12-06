@@ -15,46 +15,32 @@ namespace KIHEDOVI_Cuestionario
         public FormCrearCuestionario()
         {
             InitializeComponent();
-            upHoraTGeneral.Value = 1;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnEditarPreguntas_Click(object sender, EventArgs e)
         {
-            this.tbTituloCuestionario.Focus();
+            panelCalificaciones.Hide();
+            panelInicio.Hide();
+            panelEditarPreguntas.Show();
         }
 
-        private void btnAgregarPreguntas_Click(object sender, EventArgs e)
+        private void btnInicio_Click(object sender, EventArgs e)
         {
-            Form abrirFormulario = new FormAgregarPreguntas();
-            abrirFormulario.ShowDialog();
+            panelCalificaciones.Hide();
+            panelEditarPreguntas.Hide();
+            panelInicio.Show();
         }
 
-        private void checkBox_CheckedChanged(object sender, EventArgs e)
+        private void btnCalificaciones_Click(object sender, EventArgs e)
         {
-
+            panelInicio.Hide();
+            panelEditarPreguntas.Hide();
+            panelCalificaciones.Show();
         }
 
-        private void btnCrearCuestionario_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            String TituloTest, codigo = "SDS45QWE";
-            decimal TiempoHora,TiempoMinuto;
-
-            TituloTest = tbTituloCuestionario.Text;
-            if (TituloTest == "" && lbCantidadPreguntas.Text == "0")
-            {
-                MessageBox.Show("Debe ingresar un título.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                TiempoHora = upHoraTGeneral.Value;
-                TiempoMinuto = upMinutoTGeneral.Value;
-                MessageBox.Show("Cuestionario creado.\nEl código es: "+codigo,"", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void tbTituloCuestionario_TextChanged(object sender, EventArgs e)
-        {
-            
+            this.Close();
         }
     }
 }

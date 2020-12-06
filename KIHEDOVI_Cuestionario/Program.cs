@@ -16,7 +16,7 @@ namespace KIHEDOVI_Cuestionario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCrearCuestionario());
+            Application.Run(new FormInicio());
         }
     }
 }
