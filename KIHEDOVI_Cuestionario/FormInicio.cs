@@ -27,10 +27,21 @@ namespace KIHEDOVI_Cuestionario
             panelSubMenuTengoCodigo.Show();
         }
 
+        /// <summary>Handles the Click event of the btnCrearQuiz control.</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnCrearQuiz_Click(object sender, EventArgs e)
         {
             FormCrearCuestionario crearCuestionario = new FormCrearCuestionario();
             crearCuestionario.Show();
+        }
+
+        private void btnAceptarCodigoNombre_Click(object sender, EventArgs e)
+        {
+            FormResponderCuestionario responderCuestionario = new FormResponderCuestionario();
+            responderCuestionario.Show();
+
+            
         }
     }
 }

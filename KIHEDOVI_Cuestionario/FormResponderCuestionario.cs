@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KIHEDOVI_Cuestionario
 {
-    public partial class Form1 : Form
+    public partial class FormResponderCuestionario : Form
     {
-        public Form1()
+        public FormResponderCuestionario()
         {
             InitializeComponent();
         }

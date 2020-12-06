@@ -17,6 +17,9 @@ namespace KIHEDOVI_Cuestionario
             InitializeComponent();
         }
 
+        /// <summary>Handles the Click event of the btnEditarPreguntas control.</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnEditarPreguntas_Click(object sender, EventArgs e)
         {
             panelCalificaciones.Hide();
@@ -41,6 +44,12 @@ namespace KIHEDOVI_Cuestionario
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCrearquiz_Click(object sender, EventArgs e)
+        {
+            String titulo = txtTituloQuiz.Text;
+            
         }
     }
 }
