@@ -36,6 +36,7 @@
             this.pictureBoxImagenLogo = new System.Windows.Forms.PictureBox();
             this.lblVersion = new System.Windows.Forms.Label();
             this.panelInicio = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.NumUpDownTiempoSegundo = new System.Windows.Forms.NumericUpDown();
@@ -64,18 +65,21 @@
             this.txtPregunta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblPregunta = new System.Windows.Forms.Label();
-            this.panelCalificaciones = new System.Windows.Forms.Panel();
+            this.panelResponderPregunta = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblResponderPregunta = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.panelOpcionesCrearCuestionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagenLogo)).BeginInit();
             this.panelInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDownTiempoSegundo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDownTiempoMinuto)).BeginInit();
             this.panelEditarPreguntas.SuspendLayout();
-            this.panelCalificaciones.SuspendLayout();
+            this.panelResponderPregunta.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelOpcionesCrearCuestionario
@@ -115,7 +119,7 @@
             this.btnCalificaciones.Name = "btnCalificaciones";
             this.btnCalificaciones.Size = new System.Drawing.Size(204, 50);
             this.btnCalificaciones.TabIndex = 3;
-            this.btnCalificaciones.Text = "Calificaciones";
+            this.btnCalificaciones.Text = "Responder Pregunta";
             this.btnCalificaciones.UseVisualStyleBackColor = false;
             this.btnCalificaciones.Click += new System.EventHandler(this.btnCalificaciones_Click);
             // 
@@ -129,7 +133,7 @@
             this.btnEditarPreguntas.Name = "btnEditarPreguntas";
             this.btnEditarPreguntas.Size = new System.Drawing.Size(204, 50);
             this.btnEditarPreguntas.TabIndex = 2;
-            this.btnEditarPreguntas.Text = "Editar Preguntas";
+            this.btnEditarPreguntas.Text = "Editar Pregunta";
             this.btnEditarPreguntas.UseVisualStyleBackColor = false;
             this.btnEditarPreguntas.Click += new System.EventHandler(this.btnEditarPreguntas_Click);
             // 
@@ -183,6 +187,16 @@
             this.panelInicio.Name = "panelInicio";
             this.panelInicio.Size = new System.Drawing.Size(566, 419);
             this.panelInicio.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(41, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Opcional:";
             // 
             // label12
             // 
@@ -497,17 +511,76 @@
             this.lblPregunta.TabIndex = 0;
             this.lblPregunta.Text = "Pregunta";
             // 
-            // panelCalificaciones
+            // panelResponderPregunta
             // 
-            this.panelCalificaciones.BackColor = System.Drawing.Color.Transparent;
-            this.panelCalificaciones.Controls.Add(this.label13);
-            this.panelCalificaciones.Controls.Add(this.label14);
-            this.panelCalificaciones.Controls.Add(this.label16);
-            this.panelCalificaciones.Location = new System.Drawing.Point(208, 4);
-            this.panelCalificaciones.Name = "panelCalificaciones";
-            this.panelCalificaciones.Size = new System.Drawing.Size(577, 430);
-            this.panelCalificaciones.TabIndex = 7;
-            this.panelCalificaciones.Visible = false;
+            this.panelResponderPregunta.BackColor = System.Drawing.Color.Transparent;
+            this.panelResponderPregunta.Controls.Add(this.button4);
+            this.panelResponderPregunta.Controls.Add(this.button3);
+            this.panelResponderPregunta.Controls.Add(this.button2);
+            this.panelResponderPregunta.Controls.Add(this.button1);
+            this.panelResponderPregunta.Controls.Add(this.lblResponderPregunta);
+            this.panelResponderPregunta.Controls.Add(this.label14);
+            this.panelResponderPregunta.Controls.Add(this.lblTitulo);
+            this.panelResponderPregunta.Location = new System.Drawing.Point(208, 4);
+            this.panelResponderPregunta.Name = "panelResponderPregunta";
+            this.panelResponderPregunta.Size = new System.Drawing.Size(577, 430);
+            this.panelResponderPregunta.TabIndex = 7;
+            this.panelResponderPregunta.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(167)))), ((int)(((byte)(91)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(323, 288);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(204, 50);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Respuesta D";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(167)))), ((int)(((byte)(91)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(55, 290);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(204, 50);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Respuesta C";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(167)))), ((int)(((byte)(91)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(323, 190);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(204, 50);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Respuesta B";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(167)))), ((int)(((byte)(91)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(55, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(204, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Respuesta A";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lblResponderPregunta
+            // 
+            this.lblResponderPregunta.AutoSize = true;
+            this.lblResponderPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lblResponderPregunta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblResponderPregunta.Location = new System.Drawing.Point(229, 113);
+            this.lblResponderPregunta.Name = "lblResponderPregunta";
+            this.lblResponderPregunta.Size = new System.Drawing.Size(100, 26);
+            this.lblResponderPregunta.TabIndex = 3;
+            this.lblResponderPregunta.Text = "Pregunta";
             // 
             // label14
             // 
@@ -518,41 +591,20 @@
             this.label14.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.label14.Location = new System.Drawing.Point(3, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(125, 24);
+            this.label14.Size = new System.Drawing.Size(184, 24);
             this.label14.TabIndex = 2;
-            this.label14.Text = "Calificaciones";
+            this.label14.Text = "Responder pregunta";
             // 
-            // label16
+            // lblTitulo
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label16.ForeColor = System.Drawing.SystemColors.Window;
-            this.label16.Location = new System.Drawing.Point(185, 25);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(202, 37);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Participantes";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(41, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Opcional:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(12, 91);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(294, 17);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "Nota: Para implementar en el segundo sprint.";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblTitulo.Location = new System.Drawing.Point(215, 40);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(140, 55);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Titulo";
             // 
             // FormCrearCuestionario
             // 
@@ -562,9 +614,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.panelOpcionesCrearCuestionario);
-            this.Controls.Add(this.panelEditarPreguntas);
             this.Controls.Add(this.panelInicio);
-            this.Controls.Add(this.panelCalificaciones);
+            this.Controls.Add(this.panelResponderPregunta);
+            this.Controls.Add(this.panelEditarPreguntas);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCrearCuestionario";
@@ -578,8 +630,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumUpDownTiempoMinuto)).EndInit();
             this.panelEditarPreguntas.ResumeLayout(false);
             this.panelEditarPreguntas.PerformLayout();
-            this.panelCalificaciones.ResumeLayout(false);
-            this.panelCalificaciones.PerformLayout();
+            this.panelResponderPregunta.ResumeLayout(false);
+            this.panelResponderPregunta.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -616,9 +668,9 @@
         private System.Windows.Forms.RadioButton rbtnRespuesta2;
         private System.Windows.Forms.RadioButton rbtnRespuesta1;
         private System.Windows.Forms.Button btnSiguientePregunta;
-        private System.Windows.Forms.Panel panelCalificaciones;
+        private System.Windows.Forms.Panel panelResponderPregunta;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnCrearquiz;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -627,6 +679,10 @@
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtCodigoQuiz;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblResponderPregunta;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

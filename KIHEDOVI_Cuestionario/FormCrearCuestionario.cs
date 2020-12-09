@@ -12,7 +12,6 @@ namespace KIHEDOVI_Cuestionario
 {
     public partial class FormCrearCuestionario : Form
     {
-        int numeroPregunta = 1;
         public FormCrearCuestionario()
         {
             InitializeComponent();
@@ -24,14 +23,14 @@ namespace KIHEDOVI_Cuestionario
         /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnEditarPreguntas_Click(object sender, EventArgs e)
         {
-            panelCalificaciones.Hide();
+            panelResponderPregunta.Hide();
             panelInicio.Hide();
             panelEditarPreguntas.Show();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            panelCalificaciones.Hide();
+            panelResponderPregunta.Hide();
             panelEditarPreguntas.Hide();
             panelInicio.Show();
         }
@@ -40,7 +39,7 @@ namespace KIHEDOVI_Cuestionario
         {
             panelInicio.Hide();
             panelEditarPreguntas.Hide();
-            panelCalificaciones.Show();
+            panelResponderPregunta.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -64,12 +63,15 @@ namespace KIHEDOVI_Cuestionario
             }
         }
 
-        private void btnCrearquiz_Click(object sender, EventArgs e)
+        public void btnCrearquiz_Click(object sender, EventArgs e)
         {
-            String titulo = txtTituloQuiz.Text;
-            String codigo = txtCodigoQuiz.Text;
+            string titulo = txtTituloQuiz.Text;
+            string codigo = txtCodigoQuiz.Text;
             int tiempoMinuto = (int)NumUpDownTiempoMinuto.Value;
             int tiempoSegundo = (int)NumUpDownTiempoSegundo.Value;
+
+            txtTituloQuiz.Text = "";
+            txtCodigoQuiz.Text = "";
         }
 
         private void btnSiguientePregunta_Click(object sender, EventArgs e)

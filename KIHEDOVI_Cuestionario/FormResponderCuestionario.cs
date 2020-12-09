@@ -12,6 +12,7 @@ namespace KIHEDOVI_Cuestionario
 {
     public partial class FormResponderCuestionario : Form
     {
+        FormCrearCuestionario crearCuestionario = new FormCrearCuestionario();
         public FormResponderCuestionario()
         {
             InitializeComponent();
@@ -25,6 +26,10 @@ namespace KIHEDOVI_Cuestionario
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormResponderCuestionario_Load(object sender, EventArgs e)
+        {
         }
     }
 }
