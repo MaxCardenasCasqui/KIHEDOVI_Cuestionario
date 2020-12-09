@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicio));
+            System.Windows.Forms.Label iDQuizLabel;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelSubMenuTengoCodigo = new System.Windows.Forms.Panel();
-            this.btnAceptarCodigoNombre = new System.Windows.Forms.Button();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNombrePrograma = new System.Windows.Forms.Label();
             this.btnCrearQuiz = new System.Windows.Forms.Button();
             this.btnTengoCodigo = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.txtCodigoQuiz = new System.Windows.Forms.TextBox();
+            this.btnAceptarCodigoNombre = new System.Windows.Forms.Button();
+            this.panelSubMenuTengoCodigo = new System.Windows.Forms.Panel();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            iDQuizLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSubMenuTengoCodigo.SuspendLayout();
             this.SuspendLayout();
@@ -49,85 +50,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(509, 454);
+            this.pictureBox1.Size = new System.Drawing.Size(382, 369);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panelSubMenuTengoCodigo
-            // 
-            this.panelSubMenuTengoCodigo.BackColor = System.Drawing.Color.Transparent;
-            this.panelSubMenuTengoCodigo.Controls.Add(this.btnAceptarCodigoNombre);
-            this.panelSubMenuTengoCodigo.Controls.Add(this.lblNombre);
-            this.panelSubMenuTengoCodigo.Controls.Add(this.textBox1);
-            this.panelSubMenuTengoCodigo.Controls.Add(this.txtCodigo);
-            this.panelSubMenuTengoCodigo.Controls.Add(this.lblCodigo);
-            this.panelSubMenuTengoCodigo.Location = new System.Drawing.Point(524, 158);
-            this.panelSubMenuTengoCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panelSubMenuTengoCodigo.Name = "panelSubMenuTengoCodigo";
-            this.panelSubMenuTengoCodigo.Size = new System.Drawing.Size(281, 217);
-            this.panelSubMenuTengoCodigo.TabIndex = 1;
-            this.panelSubMenuTengoCodigo.Visible = false;
-            // 
-            // btnAceptarCodigoNombre
-            // 
-            this.btnAceptarCodigoNombre.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btnAceptarCodigoNombre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAceptarCodigoNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptarCodigoNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnAceptarCodigoNombre.Location = new System.Drawing.Point(177, 167);
-            this.btnAceptarCodigoNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAceptarCodigoNombre.Name = "btnAceptarCodigoNombre";
-            this.btnAceptarCodigoNombre.Size = new System.Drawing.Size(100, 43);
-            this.btnAceptarCodigoNombre.TabIndex = 4;
-            this.btnAceptarCodigoNombre.Text = "ACEPTAR";
-            this.btnAceptarCodigoNombre.UseVisualStyleBackColor = false;
-            this.btnAceptarCodigoNombre.Click += new System.EventHandler(this.btnAceptarCodigoNombre_Click);
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNombre.Location = new System.Drawing.Point(5, 90);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(83, 20);
-            this.lblNombre.TabIndex = 3;
-            this.lblNombre.Text = "NOMBRE";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox1.Location = new System.Drawing.Point(0, 116);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 43);
-            this.textBox1.TabIndex = 2;
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtCodigo.Location = new System.Drawing.Point(0, 34);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCodigo.Multiline = true;
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(280, 43);
-            this.txtCodigo.TabIndex = 1;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCodigo.Location = new System.Drawing.Point(5, 9);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(77, 20);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "CÓDIGO";
             // 
             // lblNombrePrograma
             // 
@@ -135,10 +61,9 @@
             this.lblNombrePrograma.BackColor = System.Drawing.Color.DarkSlateGray;
             this.lblNombrePrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblNombrePrograma.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.lblNombrePrograma.Location = new System.Drawing.Point(17, 16);
-            this.lblNombrePrograma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombrePrograma.Location = new System.Drawing.Point(13, 13);
             this.lblNombrePrograma.Name = "lblNombrePrograma";
-            this.lblNombrePrograma.Size = new System.Drawing.Size(176, 31);
+            this.lblNombrePrograma.Size = new System.Drawing.Size(143, 26);
             this.lblNombrePrograma.TabIndex = 2;
             this.lblNombrePrograma.Text = "Penguin Quiz";
             // 
@@ -148,10 +73,9 @@
             this.btnCrearQuiz.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearQuiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnCrearQuiz.Location = new System.Drawing.Point(524, 16);
-            this.btnCrearQuiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearQuiz.Location = new System.Drawing.Point(393, 13);
             this.btnCrearQuiz.Name = "btnCrearQuiz";
-            this.btnCrearQuiz.Size = new System.Drawing.Size(281, 62);
+            this.btnCrearQuiz.Size = new System.Drawing.Size(211, 50);
             this.btnCrearQuiz.TabIndex = 3;
             this.btnCrearQuiz.Text = "CREAR QUIZ";
             this.btnCrearQuiz.UseVisualStyleBackColor = false;
@@ -163,10 +87,9 @@
             this.btnTengoCodigo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTengoCodigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTengoCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnTengoCodigo.Location = new System.Drawing.Point(524, 96);
-            this.btnTengoCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTengoCodigo.Location = new System.Drawing.Point(393, 78);
             this.btnTengoCodigo.Name = "btnTengoCodigo";
-            this.btnTengoCodigo.Size = new System.Drawing.Size(281, 62);
+            this.btnTengoCodigo.Size = new System.Drawing.Size(211, 50);
             this.btnTengoCodigo.TabIndex = 4;
             this.btnTengoCodigo.Text = "TENGO UN CÓDIGO";
             this.btnTengoCodigo.UseVisualStyleBackColor = false;
@@ -178,21 +101,88 @@
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSalir.Location = new System.Drawing.Point(524, 390);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Location = new System.Drawing.Point(393, 317);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(281, 43);
+            this.btnSalir.Size = new System.Drawing.Size(211, 35);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // txtCodigoQuiz
+            // 
+            this.txtCodigoQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCodigoQuiz.Location = new System.Drawing.Point(0, 27);
+            this.txtCodigoQuiz.Multiline = true;
+            this.txtCodigoQuiz.Name = "txtCodigoQuiz";
+            this.txtCodigoQuiz.Size = new System.Drawing.Size(211, 36);
+            this.txtCodigoQuiz.TabIndex = 6;
+            // 
+            // btnAceptarCodigoNombre
+            // 
+            this.btnAceptarCodigoNombre.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnAceptarCodigoNombre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAceptarCodigoNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptarCodigoNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAceptarCodigoNombre.Location = new System.Drawing.Point(133, 136);
+            this.btnAceptarCodigoNombre.Name = "btnAceptarCodigoNombre";
+            this.btnAceptarCodigoNombre.Size = new System.Drawing.Size(75, 35);
+            this.btnAceptarCodigoNombre.TabIndex = 4;
+            this.btnAceptarCodigoNombre.Text = "ACEPTAR";
+            this.btnAceptarCodigoNombre.UseVisualStyleBackColor = false;
+            this.btnAceptarCodigoNombre.Click += new System.EventHandler(this.btnAceptarCodigoNombre_Click);
+            // 
+            // iDQuizLabel
+            // 
+            iDQuizLabel.AutoSize = true;
+            iDQuizLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            iDQuizLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            iDQuizLabel.Location = new System.Drawing.Point(4, 7);
+            iDQuizLabel.Name = "iDQuizLabel";
+            iDQuizLabel.Size = new System.Drawing.Size(63, 17);
+            iDQuizLabel.TabIndex = 5;
+            iDQuizLabel.Text = "CÓDIGO";
+            // 
+            // panelSubMenuTengoCodigo
+            // 
+            this.panelSubMenuTengoCodigo.BackColor = System.Drawing.Color.Transparent;
+            this.panelSubMenuTengoCodigo.Controls.Add(iDQuizLabel);
+            this.panelSubMenuTengoCodigo.Controls.Add(this.btnAceptarCodigoNombre);
+            this.panelSubMenuTengoCodigo.Controls.Add(this.lblNombre);
+            this.panelSubMenuTengoCodigo.Controls.Add(this.txtCodigoQuiz);
+            this.panelSubMenuTengoCodigo.Controls.Add(this.txtNombre);
+            this.panelSubMenuTengoCodigo.Location = new System.Drawing.Point(393, 128);
+            this.panelSubMenuTengoCodigo.Name = "panelSubMenuTengoCodigo";
+            this.panelSubMenuTengoCodigo.Size = new System.Drawing.Size(211, 191);
+            this.panelSubMenuTengoCodigo.TabIndex = 1;
+            this.panelSubMenuTengoCodigo.Visible = false;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtNombre.Location = new System.Drawing.Point(0, 94);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(211, 36);
+            this.txtNombre.TabIndex = 2;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNombre.Location = new System.Drawing.Point(4, 73);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(68, 17);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "NOMBRE";
+            // 
             // FormInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(821, 454);
+            this.ClientSize = new System.Drawing.Size(617, 369);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnTengoCodigo);
             this.Controls.Add(this.btnCrearQuiz);
@@ -200,10 +190,10 @@
             this.Controls.Add(this.panelSubMenuTengoCodigo);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formInicio";
+            this.Load += new System.EventHandler(this.FormInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSubMenuTengoCodigo.ResumeLayout(false);
             this.panelSubMenuTengoCodigo.PerformLayout();
@@ -215,15 +205,14 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelSubMenuTengoCodigo;
         private System.Windows.Forms.Label lblNombrePrograma;
         private System.Windows.Forms.Button btnCrearQuiz;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Button btnTengoCodigo;
-        private System.Windows.Forms.Button btnAceptarCodigoNombre;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox txtCodigoQuiz;
+        private System.Windows.Forms.Button btnAceptarCodigoNombre;
+        private System.Windows.Forms.Panel panelSubMenuTengoCodigo;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }
