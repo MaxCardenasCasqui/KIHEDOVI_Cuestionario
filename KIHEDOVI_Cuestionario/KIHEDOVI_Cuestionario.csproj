@@ -126,5 +126,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KIHEDOVI_CuestionarioLibreria\KIHEDOVI_CuestionarioLibreria.csproj">
+      <Project>{60503736-c005-4270-8340-931eae9ea485}</Project>
+      <Name>KIHEDOVI_CuestionarioLibreria</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

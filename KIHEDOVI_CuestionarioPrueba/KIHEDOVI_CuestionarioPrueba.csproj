@@ -47,6 +47,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CuestionarioPrueba.cs" />
@@ -54,6 +55,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KIHEDOVI_CuestionarioLibreria\KIHEDOVI_CuestionarioLibreria.csproj">
+      <Project>{60503736-c005-4270-8340-931eae9ea485}</Project>
+      <Name>KIHEDOVI_CuestionarioLibreria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KIHEDOVI_Cuestionario\KIHEDOVI_Cuestionario.csproj">
+      <Project>{2a6a6a32-6d1a-429e-b012-41210f46a44e}</Project>
+      <Name>KIHEDOVI_Cuestionario</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
